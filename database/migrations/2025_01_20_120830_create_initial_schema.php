@@ -11,7 +11,7 @@ return new class extends Migration
 
         Schema::create('drops', function (Blueprint $table) {
             $table->id();
-            $table->uuid('user_id'); // Store UUID without foreign key
+            $table->uuid('user_id');
             $table->string('name')->nullable();
             $table->timestamps();
         });
